@@ -10,3 +10,5 @@ LOAD DATA LOCAL INFILE
   OPTIONALLY ENCLOSED BY '"'
   LINES TERMINATED BY '\r\n';
 ```
+
+**ファイルのパスは、Windows のフルパスですが、MySQL に渡す時は、\ を / に変えてください**
