@@ -4,11 +4,11 @@
 
 ```sql
 LOAD DATA LOCAL INFILE
- 'C:/app/workspace/subject-1001/sql/data01.csv'
+    'C:/app/workspace/subject-1001/sql/data01.csv'
  INTO TABLE table01
-  FIELDS TERMINATED BY ','
-  OPTIONALLY ENCLOSED BY '"'
-  LINES TERMINATED BY '\r\n';
+    FIELDS TERMINATED BY ','
+    OPTIONALLY ENCLOSED BY '"'
+    LINES TERMINATED BY '\r\n';
 ```
 
 **ファイルのパスは、Windows のフルパスですが、MySQL に渡す時は、\ を / に変えてください**
