@@ -31,3 +31,9 @@ SELECT
     OPTIONALLY ENCLOSED BY '"'
     LINES TERMINATED BY '\r\n';
 ```
+
+## タブ区切りのファイルに出力する場合は注意
+```
+拡張子が .tsv の場合、VS Code の 挙動がおかしい( Excel にうまく貼りつかない )
+```
+
