@@ -15,3 +15,16 @@ LOAD DATA [LOCAL] INFILE
 
 ※ 先頭の \ を 選択して CTRL + B で必要な場所まで選択として、/ キーを押して一括選択しましょう\
 ※ LOCAL は省略した場合ファイルはサーバーホスト上にある必要があります
+
+## テキストファイルに出力
+```sql
+SELECT
+    *
+ FROM
+    table01
+ INTO OUTFILE
+     'C:/app/workspace/subject-1001/sql/data02.csv'
+    FIELDS TERMINATED BY ','
+    OPTIONALLY ENCLOSED BY '"'
+    LINES TERMINATED BY '\r\n';
+```
